@@ -144,9 +144,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="api\Api.cpp" />
+    <ClCompile Include="infrastructure\Serializer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="api\Api.h" />
+    <ClInclude Include="domain\database\Database.h" />
+    <ClInclude Include="domain\database\IDatabase.h" />
+    <ClInclude Include="domain\table\ITable.h" />
+    <ClInclude Include="infrastructure\Serializer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -10,6 +10,15 @@
     <Filter Include="src\api">
       <UniqueIdentifier>{701c9e81-0456-4a0c-b54a-622a4fb6191e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\domain\database">
+      <UniqueIdentifier>{bf18b69f-373b-4736-a8a6-b94854b99306}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\domain\table">
+      <UniqueIdentifier>{ff6ca587-04d1-42d5-95d0-28fc1a3ac51b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\infrastructure">
+      <UniqueIdentifier>{d88b2c71-d085-4fe2-9f7c-f25c26ec1cd4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -18,10 +27,25 @@
     <ClCompile Include="api\Api.cpp">
       <Filter>src\api</Filter>
     </ClCompile>
+    <ClCompile Include="infrastructure\Serializer.cpp">
+      <Filter>src\infrastructure</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="api\Api.h">
       <Filter>src\api</Filter>
+    </ClInclude>
+    <ClInclude Include="domain\database\Database.h">
+      <Filter>src\domain\database</Filter>
+    </ClInclude>
+    <ClInclude Include="domain\database\IDatabase.h">
+      <Filter>src\domain\database</Filter>
+    </ClInclude>
+    <ClInclude Include="domain\table\ITable.h">
+      <Filter>src\domain\table</Filter>
+    </ClInclude>
+    <ClInclude Include="infrastructure\Serializer.h">
+      <Filter>src\infrastructure</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
