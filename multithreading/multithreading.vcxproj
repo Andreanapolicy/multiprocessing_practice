@@ -148,6 +148,11 @@
   <ItemGroup>
     <ClInclude Include="ThreadPool.h" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\database\database.vcxproj">
+      <Project>{a2fee054-bf3f-42ef-bf89-7be29835ea88}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
