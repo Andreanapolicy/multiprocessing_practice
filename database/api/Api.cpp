@@ -5,7 +5,7 @@ namespace database::api
 {
 domain::IDatabase GetDatabase(std::string_view filename)
 {
-	return database::domain::Database();
+	return ;
 }
 
 void SaveDatabase(domain::IDatabase, std::string_view filename)
