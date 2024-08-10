@@ -21,14 +21,14 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="api\Api.cpp">
       <Filter>src\api</Filter>
     </ClCompile>
     <ClCompile Include="infrastructure\Serializer.cpp">
       <Filter>src\infrastructure</Filter>
+    </ClCompile>
+    <ClCompile Include="domain\database\DatabaseService.cpp">
+      <Filter>src\domain\database</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -46,6 +46,9 @@
     </ClInclude>
     <ClInclude Include="infrastructure\Serializer.h">
       <Filter>src\infrastructure</Filter>
+    </ClInclude>
+    <ClInclude Include="domain\database\DatabaseService.h">
+      <Filter>src\domain\database</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
