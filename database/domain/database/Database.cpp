@@ -10,6 +10,10 @@ class Database::Impl
 public:
 	Impl(const DatabaseData& data)
 	{
+		for (auto& [tableName, tableData] : data)
+		{
+			m_data.emplace(tableName, std::make_unique<Table>(tableData));
+		}
 	}
 
 private:

@@ -30,6 +30,12 @@
     <ClCompile Include="domain\database\DatabaseService.cpp">
       <Filter>src\domain\database</Filter>
     </ClCompile>
+    <ClCompile Include="domain\table\Table.cpp">
+      <Filter>src\domain\table</Filter>
+    </ClCompile>
+    <ClCompile Include="domain\database\Database.cpp">
+      <Filter>src\domain\database</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="api\Api.h">
@@ -49,6 +55,9 @@
     </ClInclude>
     <ClInclude Include="domain\database\DatabaseService.h">
       <Filter>src\domain\database</Filter>
+    </ClInclude>
+    <ClInclude Include="domain\table\Table.h">
+      <Filter>src\domain\table</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

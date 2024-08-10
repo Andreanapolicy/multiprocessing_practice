@@ -14,5 +14,8 @@ public:
 	[[nodiscard]] std::string GetByIndex(size_t index) const override;
 	void Add(std::string_view value) override;
 	void Update(size_t index, std::string_view value) override;
+
+private:
+	TableData m_data;
 };
 } // namespace database::domain
