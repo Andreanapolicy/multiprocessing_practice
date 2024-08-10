@@ -8,15 +8,13 @@ Table::Table(const TableData& data)
 {
 }
 
-std::string Table::GetByIndex(size_t index) const
+std::string Table::GetByKey(std::string_view key) const
 {
-	if (m_data.size() > index)
+	auto it = m_data.find(key.data());
+	if (it == m_data.end())
 	{
 		return "";
 	}
-	
-	const auto it = m_data.begin();
-	std::advance(it, index);
 
 	return it->second;
 }

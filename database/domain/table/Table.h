@@ -11,7 +11,7 @@ class Table final : public ITable
 public:
 	Table(const TableData& data);
 
-	[[nodiscard]] std::string GetByIndex(size_t index) const override;
+	[[nodiscard]] std::string GetByKey(std::string_view key) const override;
 	void Add(std::string_view value) override;
 	void Update(size_t index, std::string_view value) override;
 
