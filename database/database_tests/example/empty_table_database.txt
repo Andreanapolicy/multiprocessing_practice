@@ -1,0 +1,4 @@
+Table: empty
+
+Table: nonempty
+key1 : value1

@@ -7,6 +7,9 @@
     <Filter Include="src\infrastructure">
       <UniqueIdentifier>{52fe8f7a-61d9-40cc-9993-f85f0ec3485c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="example">
+      <UniqueIdentifier>{e97302b4-35f0-47c4-a058-fe27e432526d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -15,5 +18,19 @@
     <ClCompile Include="infrastructure\SerializerTests.cpp">
       <Filter>src\infrastructure</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="example\full_database.txt">
+      <Filter>example</Filter>
+    </Text>
+    <Text Include="example\empty_database.txt">
+      <Filter>example</Filter>
+    </Text>
+    <Text Include="example\empty_table_database.txt">
+      <Filter>example</Filter>
+    </Text>
+    <Text Include="example\invalid_database.txt">
+      <Filter>example</Filter>
+    </Text>
   </ItemGroup>
 </Project>

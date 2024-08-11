@@ -23,6 +23,17 @@
     <ClCompile Include="infrastructure\SerializerTests.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\database.vcxproj">
+      <Project>{a2fee054-bf3f-42ef-bf89-7be29835ea88}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="example\empty_database.txt" />
+    <Text Include="example\empty_table_database.txt" />
+    <Text Include="example\full_database.txt" />
+    <Text Include="example\invalid_database.txt" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
