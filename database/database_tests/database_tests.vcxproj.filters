@@ -4,10 +4,16 @@
     <Filter Include="src">
       <UniqueIdentifier>{ab199e26-a94f-48cc-a43a-8eb24ec6cda2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\infrastructure">
+      <UniqueIdentifier>{52fe8f7a-61d9-40cc-9993-f85f0ec3485c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="infrastructure\SerializerTests.cpp">
+      <Filter>src\infrastructure</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
