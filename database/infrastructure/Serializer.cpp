@@ -1,4 +1,5 @@
 #include "Serializer.h"
+#include <filesystem>
 #include <fstream>
 #include <sstream>
 
@@ -7,7 +8,10 @@ namespace database::infrastructure
 RawDatabase Serializer::GetDatabase(std::string_view filename)
 {
 	std::ifstream file;
-	file.open(filename.data());
+
+	auto path = std::filesystem::current_path();
+	path += filename.data();
+	file.open(path);
 
 	if (!file.is_open())
 	{
@@ -30,7 +34,7 @@ RawDatabase Serializer::GetDatabase(std::string_view filename)
 
 		iss >> tableName;
 		RawTableData tableData;
-		while (std::getline(file, line))
+		while (std::getline(file, line) && !line.empty())
 		{
 			std::istringstream iss{ line };
 
@@ -38,7 +42,7 @@ RawDatabase Serializer::GetDatabase(std::string_view filename)
 			std::string value;
 			std::string separator;
 
-			if (iss >> key && iss >> separator && separator != ":" && iss >> value)
+			if (iss >> key && iss >> separator && iss >> value && separator != ":")
 			{
 				throw std::runtime_error("error"); // TODO: add custom exception
 			}
