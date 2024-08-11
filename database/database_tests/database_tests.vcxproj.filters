@@ -10,6 +10,15 @@
     <Filter Include="example">
       <UniqueIdentifier>{e97302b4-35f0-47c4-a058-fe27e432526d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\domain">
+      <UniqueIdentifier>{557ced7f-cca2-46e2-9014-79bc399c899e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\domain\database">
+      <UniqueIdentifier>{572a9eee-5b4b-4f37-acdc-3ba9b6c718b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\domain\table">
+      <UniqueIdentifier>{5eda108e-8a24-418b-a64f-0880b66be57c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -17,6 +26,12 @@
     </ClCompile>
     <ClCompile Include="infrastructure\SerializerTests.cpp">
       <Filter>src\infrastructure</Filter>
+    </ClCompile>
+    <ClCompile Include="domain\database\DatabaseTests.cpp">
+      <Filter>src\domain\database</Filter>
+    </ClCompile>
+    <ClCompile Include="domain\table\TableTests.cpp">
+      <Filter>src\domain\table</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

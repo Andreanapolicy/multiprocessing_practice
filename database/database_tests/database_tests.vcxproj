@@ -20,6 +20,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="domain\database\DatabaseTests.cpp" />
+    <ClCompile Include="domain\table\TableTests.cpp" />
     <ClCompile Include="infrastructure\SerializerTests.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
