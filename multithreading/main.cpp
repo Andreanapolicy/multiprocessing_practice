@@ -3,6 +3,6 @@
 
 int main()
 {
-	const auto database = database::api::GetDatabase("fuck");
+	const auto database = database::api::GetDatabase("/example/database.txt");
 	return 0;
 }
